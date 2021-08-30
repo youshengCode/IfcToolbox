@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IfcToolbox.Core\IfcToolbox.Core.csproj" />
     <ProjectReference Include="..\IfcToolbox.Tests\IfcToolbox.Tests.csproj" />
     <ProjectReference Include="..\IfcToolbox.Tools\IfcToolbox.Tools.csproj" />
   </ItemGroup>
