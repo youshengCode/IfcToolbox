@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IfcToolbox.Core\IfcToolbox.Core.csproj" />
+    <ProjectReference Include="..\IfcToolbox.Tests\IfcToolbox.Tests.csproj" />
+    <ProjectReference Include="..\IfcToolbox.Tools\IfcToolbox.Tools.csproj" />
+  </ItemGroup>
+
+</Project>
