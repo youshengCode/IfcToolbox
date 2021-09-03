@@ -9,6 +9,7 @@ namespace IfcToolbox.Examples
 {
     public static class SampleProcess
     {
+        // ATTENTION: Do not forget to replace your own local Output Folder
         private static string OutputFolder = LocalFiles.TestOutputFolder;
 
         public static void Start()
@@ -25,7 +26,8 @@ namespace IfcToolbox.Examples
             //IfcConverterSample.ConvertToSvg(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
             //IfcConverterSample.ConvertToObj(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
 
-            IfcAnonymizerSample.Anonymize(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
+            IfcAnonymizerSample.AnonymizeUserInfo(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
+            //IfcAnonymizerSample.AnonymizeProductInfoWithRules(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
 
             //SimulationProcessingTime();
         }

@@ -8,16 +8,17 @@
   Simple tools for processing IFC files.
 </p>
 <p align="center">
-  <a style="text-decoration:none" href="https://www.microsoft.com/store">
+  <a style="text-decoration:none" href="https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab">
     <img src="https://img.shields.io/badge/Microsoft%20Store-Download-blue" alt="Store link" />
   </a>
   <a style="text-decoration:none">
-    <img src="https://img.shields.io/badge/Latest%20Version-1.1.7-brightgreen" alt="Version" />
+    <img src="https://img.shields.io/badge/Latest%20Version-1.1.9.0-brightgreen" alt="Version" />
   </a>
-  <a style="text-decoration:none" href="https://bimmars.com/">
+  <a style="text-decoration:none" href="https://bimmars.com">
     <img src="https://img.shields.io/badge/More%20Info-BIM Mars-red" alt="More" />
   </a>
 </p>
+
 
 
 
@@ -35,32 +36,39 @@ IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Techn
 
 ## GUI App in Microsoft Store 
 
-There is also a GUI version desktop app, which contains all the implementations of these tools. The IfcToolbox App is **designed for no-code users and to provide a better user experience.**
+There is also a GUI version desktop app, which contains all the implementations of these tools. The IfcToolbox App is **designed for No-Code users and to provide a better user experience.**
 
-Some sneak preview images: 
+[Download IFC Toolbox from Microsoft Store](https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab)
+
+Some app screenshots: 
 
 <p align="center">
-  <img align="center" src="Assets/IfcToolbox_Tools.png">
+  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/StoreHeroImage2k.png">
 </p>
 <p align="center">
-  <img align="center" src="Assets/IfcToolbox_IfcOptimizer.png">
+  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostOptimizer_2k.png">
 </p>
 <p align="center">
-  <img src="Assets/IfcToolbox_IfcSplitter.png">
+  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostSplitter_2k.png">
 </p>
 <p align="center">
-  <img align="center" src="Assets/IfcToolbox_IfcConverter.png">
+  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostConverter_2k.png">
 </p>
+
+IFC Toolbox GUI App is a free software, if you like my work, please consider:
+
+- Star this project on GitHub
+- Leave me a review in Microsoft Store
+- [Sponsor me on GitHub Sponsors](https://github.com/sponsors/youshengCode)
 
 ## Source code projects
 
 - IfcToolbox.Core - Lower extension for IFC processing.
-
 - IfcToolbox.Tools - Higher implementation for each tool in IfcToolbox. 
-
 - IfcToolbox.Test - Unit tests with xUnit for Core and Tools.
-
 - IfcToolbox.Examples - .Net core console app for tools example.
+
+[Documentation of IFC Toolbox](https://bimmars.com/docs/)
 
 ## Third Party Licences
 

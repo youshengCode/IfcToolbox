@@ -33,7 +33,7 @@ namespace IfcToolbox.Tools.Helper
             var b = -2.1716498121791546e-10;
             var c = 0.00013858749214326269;
             var d = -9.74217071419708;
-            return CubicCurveFitting(x, a, b, c, d);
+            return CubicCurveFitting(x, a, b, c, d) * 2;
         }
 
         private static double CubicCurveFitting(int x, double a, double b, double c, double d)
