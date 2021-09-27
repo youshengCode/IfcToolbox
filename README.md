@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="Assets/IfcToolbox_Applogo.png">
+  <img width="128" align="center" src="https://bimmars.com/wp-content/uploads/2021/09/IfcToolbox_Applogo.png">
 </p>
 <h1 align="center">
   IFC Toolbox
@@ -22,9 +22,10 @@
 
 
 
+
 IfcToolbox is a **.Net** kit of simple tools for processing IFC files. It provides tools to optimize, convert, split, relocate and anonymize IFC files easily. Based on open-source libraries like [Xbim](https://docs.xbim.net/) and [IfcOpenShell](http://ifcopenshell.org/). 
 
-IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Technical](https://technical.buildingsmart.org/misc/openbim-marketplace/). If you want to see IfcToolbox in this year's buildingSMART International Summit 2021, please [vote for IfcToolbox !](https://technical.buildingsmart.org/misc/openbim-marketplace/)
+IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Technical](https://technical.buildingsmart.org/misc/openbim-marketplace/). Thank you all for ❤️ IFC Toolbox and bring IFC Toolbox to buildingSMART International Summit 2021. 
 
 ## Tools in the box
 
@@ -55,6 +56,7 @@ Some app screenshots:
   <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostConverter_2k.png">
 </p>
 
+
 IFC Toolbox GUI App is a free software, if you like my work, please consider:
 
 - Star this project on GitHub
@@ -68,7 +70,7 @@ IFC Toolbox GUI App is a free software, if you like my work, please consider:
 - IfcToolbox.Test - Unit tests with xUnit for Core and Tools.
 - IfcToolbox.Examples - .Net core console app for tools example.
 
-[Documentation of IFC Toolbox](https://bimmars.com/docs/)
+[Documentation of IFC Toolbox](https://youshengcode.github.io/IfcToolbox.Doc/#/)
 
 ## Third Party Licences
 
