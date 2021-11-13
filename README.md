@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="Assets/IfcToolbox_Applogo.png">
+  <img width="128" align="center" src="https://bimmars.com/wp-content/uploads/2021/09/IfcToolbox_Applogo.png">
 </p>
 <h1 align="center">
   IFC Toolbox
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Microsoft%20Store-Download-blue" alt="Store link" />
   </a>
   <a style="text-decoration:none">
-    <img src="https://img.shields.io/badge/Latest%20Version-1.1.9.0-brightgreen" alt="Version" />
+    <img src="https://img.shields.io/badge/Latest%20Version-1.2.0.0-brightgreen" alt="Version" />
   </a>
   <a style="text-decoration:none" href="https://bimmars.com">
     <img src="https://img.shields.io/badge/More%20Info-BIM Mars-red" alt="More" />
@@ -22,9 +22,13 @@
 
 
 
-IfcToolbox is a **.Net** kit of simple tools for processing IFC files. It provides tools to optimize, convert, split, relocate and anonymize IFC files easily. Based on open-source libraries like [Xbim](https://docs.xbim.net/) and [IfcOpenShell](http://ifcopenshell.org/). 
 
-IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Technical](https://technical.buildingsmart.org/misc/openbim-marketplace/). If you want to see IfcToolbox in this year's buildingSMART International Summit 2021, please [vote for IfcToolbox !](https://technical.buildingsmart.org/misc/openbim-marketplace/)
+
+IfcToolbox is a .Net kit of simple tools for processing IFC files. It provides tools to optimize, convert, split, relocate and anonymize IFC files easily. Based on open-source libraries like [Xbim](https://docs.xbim.net/) and [IfcOpenShell](http://ifcopenshell.org/). 
+
+IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Technical](https://technical.buildingsmart.org/misc/openbim-marketplace/). Thank you all for ❤️ IFC Toolbox and bring IFC Toolbox to buildingSMART International Summit 2021.
+
+> IfcToolbox is a FREE software for support OpenBIM.
 
 ## Tools in the box
 
@@ -38,9 +42,25 @@ IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Techn
 
 There is also a GUI version desktop app, which contains all the implementations of these tools. The IfcToolbox App is **designed for No-Code users and to provide a better user experience.**
 
-[Download IFC Toolbox from Microsoft Store](https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab)
+**[Download IFC Toolbox from Microsoft Store](https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab)**
 
-Some app screenshots: 
+*If you cannot install directly from Microsoft Store, you can use the [released sideload package](https://github.com/youshengCode/IfcToolbox/releases/tag/sideload) to install IFC Toolbox in your PC. [The detailed process can be found here](Main/Download.md).
+
+### Videos
+
+IFC Toolbox is part of [OSArch](https://osarch.org/) Community, you can find more technical details in our monthly meetup recording here
+
+- [IFC Toolbox - OSArch MonthlyMeetup #18 - YouTube](https://www.youtube.com/watch?v=UIzos3MJF3c&list=PLeQc3-WBIZnPGdBduq9PsqjOZIMo4yTE5)
+
+For quick intro of IFC Toolbox you can found this short video for [Speckle Connect! 2021](https://speckle.systems/blog/connect/)
+
+- [IFC Toolbox in 5mins - Connect! 2021 - IFC Toolbox (Yousheng Wang) - YouTube](https://www.youtube.com/watch?v=ctOM7cfJDO0)
+
+And [Javad Hamidi](https://www.linkedin.com/in/javad-hamidi-8086a7150/) from our community made this first tuto video for IFC Toolbox
+
+- [How to Edit IFC Files - IFCToolbox - Best IFC Editor - YouTube](https://www.youtube.com/watch?v=iwL_e6LAOQk)
+
+### Screenshots
 
 <p align="center">
   <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/StoreHeroImage2k.png">
@@ -55,11 +75,19 @@ Some app screenshots:
   <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostConverter_2k.png">
 </p>
 
-IFC Toolbox GUI App is a free software, if you like my work, please consider:
+## Co-Translation
 
-- Star this project on GitHub
-- Leave me a review in Microsoft Store
-- [Sponsor me on GitHub Sponsors](https://github.com/sponsors/youshengCode)
+Co-Translation of IFC Toolbox GUI App is driven by our community.
+
+IfcToolbox-Cotranslation: https://github.com/youshengCode/IfcToolbox-Cotranslation
+
+## Support us
+
+IFC Toolbox GUI App is a free software, if you like it, please consider:
+
+- [Star this project on GitHub](https://github.com/youshengCode/IfcToolbox)
+- [Leave us a review in Microsoft Store](https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471)
+- [Sponsor us on GitHub Sponsors](https://github.com/sponsors/youshengCode)
 
 ## Source code projects
 
@@ -68,7 +96,7 @@ IFC Toolbox GUI App is a free software, if you like my work, please consider:
 - IfcToolbox.Test - Unit tests with xUnit for Core and Tools.
 - IfcToolbox.Examples - .Net core console app for tools example.
 
-[Documentation of IFC Toolbox](https://bimmars.com/docs/)
+[Documentation of IFC Toolbox](https://youshengcode.github.io/IfcToolbox.Doc/#/)
 
 ## Third Party Licences
 
