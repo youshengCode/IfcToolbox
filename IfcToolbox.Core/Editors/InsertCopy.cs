@@ -79,7 +79,7 @@ namespace IfcToolbox.Core.Editors
             target.Header.FileDescription = source.Header.FileDescription;
             target.Header.FileName = source.Header.FileName;
             target.Header.FileSchema = source.Header.FileSchema;
-            target.Header.FileName.OriginatingSystem = "Ifc.Toolbox v3.9 - BIM Mars";
+            target.Header.FileName.OriginatingSystem = source.Header.FileName.OriginatingSystem;
         }
 
         private static XbimEditorCredentials GetEditorCredentials()
@@ -89,7 +89,7 @@ namespace IfcToolbox.Core.Editors
                 ApplicationDevelopersName = "BIM Mars",
                 ApplicationFullName = "IFC Toolbox",
                 ApplicationIdentifier = "Ifc.Toolbox",
-                ApplicationVersion = "3.9",
+                ApplicationVersion = "1.2.0",
                 EditorsFamilyName = Environment.UserName,
             };
         }
