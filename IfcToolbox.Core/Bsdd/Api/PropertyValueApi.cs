@@ -20,64 +20,72 @@ namespace IO.Swagger.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-        public interface ILanguageApi : IApiAccessor
+        public interface IPropertyValueApi : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
-        /// Get list of available Languages
+        /// Get Property Value details
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;LanguageContractV1&gt;</returns>
-        List<LanguageContractV1> ApiLanguageV1Get ();
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>PropertyValueContractV1</returns>
+        PropertyValueContractV1 ApiPropertyValueV1Get (string namespaceUri, string languageCode = null);
 
         /// <summary>
-        /// Get list of available Languages
+        /// Get Property Value details
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;LanguageContractV1&gt;</returns>
-        ApiResponse<List<LanguageContractV1>> ApiLanguageV1GetWithHttpInfo ();
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>ApiResponse of PropertyValueContractV1</returns>
+        ApiResponse<PropertyValueContractV1> ApiPropertyValueV1GetWithHttpInfo (string namespaceUri, string languageCode = null);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Get list of available Languages
+        /// Get Property Value details
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;LanguageContractV1&gt;</returns>
-        System.Threading.Tasks.Task<List<LanguageContractV1>> ApiLanguageV1GetAsync ();
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>Task of PropertyValueContractV1</returns>
+        System.Threading.Tasks.Task<PropertyValueContractV1> ApiPropertyValueV1GetAsync (string namespaceUri, string languageCode = null);
 
         /// <summary>
-        /// Get list of available Languages
+        /// Get Property Value details
         /// </summary>
         /// <remarks>
         /// 
         /// </remarks>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;LanguageContractV1&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<LanguageContractV1>>> ApiLanguageV1GetAsyncWithHttpInfo ();
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>Task of ApiResponse (PropertyValueContractV1)</returns>
+        System.Threading.Tasks.Task<ApiResponse<PropertyValueContractV1>> ApiPropertyValueV1GetAsyncWithHttpInfo (string namespaceUri, string languageCode = null);
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-        public partial class LanguageApi : ILanguageApi
+        public partial class PropertyValueApi : IPropertyValueApi
     {
         private IO.Swagger.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LanguageApi"/> class.
+        /// Initializes a new instance of the <see cref="PropertyValueApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public LanguageApi(String basePath)
+        public PropertyValueApi(String basePath)
         {
             this.Configuration = new IO.Swagger.Client.Configuration { BasePath = basePath };
 
@@ -85,10 +93,10 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LanguageApi"/> class
+        /// Initializes a new instance of the <see cref="PropertyValueApi"/> class
         /// </summary>
         /// <returns></returns>
-        public LanguageApi()
+        public PropertyValueApi()
         {
             this.Configuration = IO.Swagger.Client.Configuration.Default;
 
@@ -96,12 +104,12 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LanguageApi"/> class
+        /// Initializes a new instance of the <see cref="PropertyValueApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public LanguageApi(IO.Swagger.Client.Configuration configuration = null)
+        public PropertyValueApi(IO.Swagger.Client.Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
                 this.Configuration = IO.Swagger.Client.Configuration.Default;
@@ -175,25 +183,32 @@ namespace IO.Swagger.Api
         }
 
         /// <summary>
-        /// Get list of available Languages 
+        /// Get Property Value details 
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;LanguageContractV1&gt;</returns>
-        public List<LanguageContractV1> ApiLanguageV1Get ()
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>PropertyValueContractV1</returns>
+        public PropertyValueContractV1 ApiPropertyValueV1Get (string namespaceUri, string languageCode = null)
         {
-             ApiResponse<List<LanguageContractV1>> localVarResponse = ApiLanguageV1GetWithHttpInfo();
+             ApiResponse<PropertyValueContractV1> localVarResponse = ApiPropertyValueV1GetWithHttpInfo(namespaceUri, languageCode);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get list of available Languages 
+        /// Get Property Value details 
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;LanguageContractV1&gt;</returns>
-        public ApiResponse< List<LanguageContractV1> > ApiLanguageV1GetWithHttpInfo ()
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>ApiResponse of PropertyValueContractV1</returns>
+        public ApiResponse< PropertyValueContractV1 > ApiPropertyValueV1GetWithHttpInfo (string namespaceUri, string languageCode = null)
         {
+            // verify the required parameter 'namespaceUri' is set
+            if (namespaceUri == null)
+                throw new ApiException(400, "Missing required parameter 'namespaceUri' when calling PropertyValueApi->ApiPropertyValueV1Get");
 
-            var localVarPath = "/api/Language/v1";
+            var localVarPath = "/api/PropertyValue/v1";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -216,6 +231,8 @@ namespace IO.Swagger.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (namespaceUri != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "namespaceUri", namespaceUri)); // query parameter
+            if (languageCode != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "languageCode", languageCode)); // query parameter
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
@@ -226,36 +243,43 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("ApiLanguageV1Get", localVarResponse);
+                Exception exception = ExceptionFactory("ApiPropertyValueV1Get", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<List<LanguageContractV1>>(localVarStatusCode,
+            return new ApiResponse<PropertyValueContractV1>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (List<LanguageContractV1>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<LanguageContractV1>)));
+                (PropertyValueContractV1) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PropertyValueContractV1)));
         }
 
         /// <summary>
-        /// Get list of available Languages 
+        /// Get Property Value details 
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;LanguageContractV1&gt;</returns>
-        public async System.Threading.Tasks.Task<List<LanguageContractV1>> ApiLanguageV1GetAsync ()
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>Task of PropertyValueContractV1</returns>
+        public async System.Threading.Tasks.Task<PropertyValueContractV1> ApiPropertyValueV1GetAsync (string namespaceUri, string languageCode = null)
         {
-             ApiResponse<List<LanguageContractV1>> localVarResponse = await ApiLanguageV1GetAsyncWithHttpInfo();
+             ApiResponse<PropertyValueContractV1> localVarResponse = await ApiPropertyValueV1GetAsyncWithHttpInfo(namespaceUri, languageCode);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Get list of available Languages 
+        /// Get Property Value details 
         /// </summary>
         /// <exception cref="IO.Swagger.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;LanguageContractV1&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<LanguageContractV1>>> ApiLanguageV1GetAsyncWithHttpInfo ()
+        /// <param name="namespaceUri">Namespace URI of the property value</param>
+        /// <param name="languageCode">Language Code (optional)</param>
+        /// <returns>Task of ApiResponse (PropertyValueContractV1)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<PropertyValueContractV1>> ApiPropertyValueV1GetAsyncWithHttpInfo (string namespaceUri, string languageCode = null)
         {
+            // verify the required parameter 'namespaceUri' is set
+            if (namespaceUri == null)
+                throw new ApiException(400, "Missing required parameter 'namespaceUri' when calling PropertyValueApi->ApiPropertyValueV1Get");
 
-            var localVarPath = "/api/Language/v1";
+            var localVarPath = "/api/PropertyValue/v1";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -278,6 +302,8 @@ namespace IO.Swagger.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (namespaceUri != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "namespaceUri", namespaceUri)); // query parameter
+            if (languageCode != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "languageCode", languageCode)); // query parameter
 
             // make the HTTP request
             IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
@@ -288,13 +314,13 @@ namespace IO.Swagger.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("ApiLanguageV1Get", localVarResponse);
+                Exception exception = ExceptionFactory("ApiPropertyValueV1Get", localVarResponse);
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<List<LanguageContractV1>>(localVarStatusCode,
+            return new ApiResponse<PropertyValueContractV1>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (List<LanguageContractV1>) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<LanguageContractV1>)));
+                (PropertyValueContractV1) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(PropertyValueContractV1)));
         }
 
     }

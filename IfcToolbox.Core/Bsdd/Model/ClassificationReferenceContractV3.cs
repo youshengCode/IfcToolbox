@@ -24,40 +24,32 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// TextSearchResponsePropertyContractV5
+    /// ClassificationReferenceContractV3
     /// </summary>
     [DataContract]
-        public partial class TextSearchResponsePropertyContractV5 :  IEquatable<TextSearchResponsePropertyContractV5>, IValidatableObject
+        public partial class ClassificationReferenceContractV3 :  IEquatable<ClassificationReferenceContractV3>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TextSearchResponsePropertyContractV5" /> class.
+        /// Initializes a new instance of the <see cref="ClassificationReferenceContractV3" /> class.
         /// </summary>
-        /// <param name="domainNamespaceUri">domainNamespaceUri.</param>
-        /// <param name="domainName">domainName.</param>
-        /// <param name="namespaceUri">namespaceUri.</param>
+        /// <param name="namespaceUri">namespaceUri (required).</param>
         /// <param name="name">name.</param>
-        /// <param name="description">description.</param>
-        public TextSearchResponsePropertyContractV5(string domainNamespaceUri = default(string), string domainName = default(string), string namespaceUri = default(string), string name = default(string), string description = default(string))
+        /// <param name="code">code.</param>
+        public ClassificationReferenceContractV3(string namespaceUri = default(string), string name = default(string), string code = default(string))
         {
-            this.DomainNamespaceUri = domainNamespaceUri;
-            this.DomainName = domainName;
-            this.NamespaceUri = namespaceUri;
+            // to ensure "namespaceUri" is required (not null)
+            if (namespaceUri == null)
+            {
+                throw new InvalidDataException("namespaceUri is a required property for ClassificationReferenceContractV3 and cannot be null");
+            }
+            else
+            {
+                this.NamespaceUri = namespaceUri;
+            }
             this.Name = name;
-            this.Description = description;
+            this.Code = code;
         }
         
-        /// <summary>
-        /// Gets or Sets DomainNamespaceUri
-        /// </summary>
-        [DataMember(Name="domainNamespaceUri", EmitDefaultValue=false)]
-        public string DomainNamespaceUri { get; set; }
-
-        /// <summary>
-        /// Gets or Sets DomainName
-        /// </summary>
-        [DataMember(Name="domainName", EmitDefaultValue=false)]
-        public string DomainName { get; set; }
-
         /// <summary>
         /// Gets or Sets NamespaceUri
         /// </summary>
@@ -71,10 +63,10 @@ namespace IO.Swagger.Model
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or Sets Description
+        /// Gets or Sets Code
         /// </summary>
-        [DataMember(Name="description", EmitDefaultValue=false)]
-        public string Description { get; set; }
+        [DataMember(Name="code", EmitDefaultValue=false)]
+        public string Code { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -83,12 +75,10 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class TextSearchResponsePropertyContractV5 {\n");
-            sb.Append("  DomainNamespaceUri: ").Append(DomainNamespaceUri).Append("\n");
-            sb.Append("  DomainName: ").Append(DomainName).Append("\n");
+            sb.Append("class ClassificationReferenceContractV3 {\n");
             sb.Append("  NamespaceUri: ").Append(NamespaceUri).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
-            sb.Append("  Description: ").Append(Description).Append("\n");
+            sb.Append("  Code: ").Append(Code).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -109,30 +99,20 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as TextSearchResponsePropertyContractV5);
+            return this.Equals(input as ClassificationReferenceContractV3);
         }
 
         /// <summary>
-        /// Returns true if TextSearchResponsePropertyContractV5 instances are equal
+        /// Returns true if ClassificationReferenceContractV3 instances are equal
         /// </summary>
-        /// <param name="input">Instance of TextSearchResponsePropertyContractV5 to be compared</param>
+        /// <param name="input">Instance of ClassificationReferenceContractV3 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(TextSearchResponsePropertyContractV5 input)
+        public bool Equals(ClassificationReferenceContractV3 input)
         {
             if (input == null)
                 return false;
 
             return 
-                (
-                    this.DomainNamespaceUri == input.DomainNamespaceUri ||
-                    (this.DomainNamespaceUri != null &&
-                    this.DomainNamespaceUri.Equals(input.DomainNamespaceUri))
-                ) && 
-                (
-                    this.DomainName == input.DomainName ||
-                    (this.DomainName != null &&
-                    this.DomainName.Equals(input.DomainName))
-                ) && 
                 (
                     this.NamespaceUri == input.NamespaceUri ||
                     (this.NamespaceUri != null &&
@@ -144,9 +124,9 @@ namespace IO.Swagger.Model
                     this.Name.Equals(input.Name))
                 ) && 
                 (
-                    this.Description == input.Description ||
-                    (this.Description != null &&
-                    this.Description.Equals(input.Description))
+                    this.Code == input.Code ||
+                    (this.Code != null &&
+                    this.Code.Equals(input.Code))
                 );
         }
 
@@ -159,16 +139,12 @@ namespace IO.Swagger.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.DomainNamespaceUri != null)
-                    hashCode = hashCode * 59 + this.DomainNamespaceUri.GetHashCode();
-                if (this.DomainName != null)
-                    hashCode = hashCode * 59 + this.DomainName.GetHashCode();
                 if (this.NamespaceUri != null)
                     hashCode = hashCode * 59 + this.NamespaceUri.GetHashCode();
                 if (this.Name != null)
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
-                if (this.Description != null)
-                    hashCode = hashCode * 59 + this.Description.GetHashCode();
+                if (this.Code != null)
+                    hashCode = hashCode * 59 + this.Code.GetHashCode();
                 return hashCode;
             }
         }

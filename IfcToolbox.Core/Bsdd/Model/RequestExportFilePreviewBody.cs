@@ -24,31 +24,26 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// UploadImportFileResultItemV1
+    /// RequestExportFilePreviewBody
     /// </summary>
     [DataContract]
-        public partial class UploadImportFileResultItemV1 :  IEquatable<UploadImportFileResultItemV1>, IValidatableObject
+        public partial class RequestExportFilePreviewBody :  IEquatable<RequestExportFilePreviewBody>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UploadImportFileResultItemV1" /> class.
+        /// Initializes a new instance of the <see cref="RequestExportFilePreviewBody" /> class.
         /// </summary>
-        public UploadImportFileResultItemV1()
+        /// <param name="xsltFormFile">The format the download should be in. Only applicable for Export Format &#x27;Custom&#x27;.</param>
+        public RequestExportFilePreviewBody(byte[] xsltFormFile = default(byte[]))
         {
+            this.XsltFormFile = xsltFormFile;
         }
         
         /// <summary>
-        /// The attribute the message applies to
+        /// The format the download should be in. Only applicable for Export Format &#x27;Custom&#x27;
         /// </summary>
-        /// <value>The attribute the message applies to</value>
-        [DataMember(Name="attribute", EmitDefaultValue=false)]
-        public string Attribute { get; private set; }
-
-        /// <summary>
-        /// The message
-        /// </summary>
-        /// <value>The message</value>
-        [DataMember(Name="message", EmitDefaultValue=false)]
-        public string Message { get; private set; }
+        /// <value>The format the download should be in. Only applicable for Export Format &#x27;Custom&#x27;</value>
+        [DataMember(Name="XsltFormFile", EmitDefaultValue=false)]
+        public byte[] XsltFormFile { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -57,9 +52,8 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class UploadImportFileResultItemV1 {\n");
-            sb.Append("  Attribute: ").Append(Attribute).Append("\n");
-            sb.Append("  Message: ").Append(Message).Append("\n");
+            sb.Append("class RequestExportFilePreviewBody {\n");
+            sb.Append("  XsltFormFile: ").Append(XsltFormFile).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -80,29 +74,24 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as UploadImportFileResultItemV1);
+            return this.Equals(input as RequestExportFilePreviewBody);
         }
 
         /// <summary>
-        /// Returns true if UploadImportFileResultItemV1 instances are equal
+        /// Returns true if RequestExportFilePreviewBody instances are equal
         /// </summary>
-        /// <param name="input">Instance of UploadImportFileResultItemV1 to be compared</param>
+        /// <param name="input">Instance of RequestExportFilePreviewBody to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UploadImportFileResultItemV1 input)
+        public bool Equals(RequestExportFilePreviewBody input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Attribute == input.Attribute ||
-                    (this.Attribute != null &&
-                    this.Attribute.Equals(input.Attribute))
-                ) && 
-                (
-                    this.Message == input.Message ||
-                    (this.Message != null &&
-                    this.Message.Equals(input.Message))
+                    this.XsltFormFile == input.XsltFormFile ||
+                    (this.XsltFormFile != null &&
+                    this.XsltFormFile.Equals(input.XsltFormFile))
                 );
         }
 
@@ -115,10 +104,8 @@ namespace IO.Swagger.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Attribute != null)
-                    hashCode = hashCode * 59 + this.Attribute.GetHashCode();
-                if (this.Message != null)
-                    hashCode = hashCode * 59 + this.Message.GetHashCode();
+                if (this.XsltFormFile != null)
+                    hashCode = hashCode * 59 + this.XsltFormFile.GetHashCode();
                 return hashCode;
             }
         }

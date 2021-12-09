@@ -24,14 +24,15 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// DomainContractV2
+    /// DomainWithClassificationsContractV2
     /// </summary>
     [DataContract]
-        public partial class DomainContractV2 :  IEquatable<DomainContractV2>, IValidatableObject
+        public partial class DomainWithClassificationsContractV2 :  IEquatable<DomainWithClassificationsContractV2>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="DomainContractV2" /> class.
+        /// Initializes a new instance of the <see cref="DomainWithClassificationsContractV2" /> class.
         /// </summary>
+        /// <param name="classifications">classifications.</param>
         /// <param name="namespaceUri">namespaceUri.</param>
         /// <param name="name">name (required).</param>
         /// <param name="version">version (required).</param>
@@ -41,12 +42,12 @@ namespace IO.Swagger.Model
         /// <param name="licenseUrl">licenseUrl.</param>
         /// <param name="qualityAssuranceProcedure">qualityAssuranceProcedure.</param>
         /// <param name="qualityAssuranceProcedureUrl">qualityAssuranceProcedureUrl.</param>
-        public DomainContractV2(string namespaceUri = default(string), string name = default(string), string version = default(string), string organizationNameOwner = default(string), string defaultLanguageCode = default(string), string license = default(string), string licenseUrl = default(string), string qualityAssuranceProcedure = default(string), string qualityAssuranceProcedureUrl = default(string))
+        public DomainWithClassificationsContractV2(List<ClassificationListItemContractV2> classifications = default(List<ClassificationListItemContractV2>), string namespaceUri = default(string), string name = default(string), string version = default(string), string organizationNameOwner = default(string), string defaultLanguageCode = default(string), string license = default(string), string licenseUrl = default(string), string qualityAssuranceProcedure = default(string), string qualityAssuranceProcedureUrl = default(string))
         {
             // to ensure "name" is required (not null)
             if (name == null)
             {
-                throw new InvalidDataException("name is a required property for DomainContractV2 and cannot be null");
+                throw new InvalidDataException("name is a required property for DomainWithClassificationsContractV2 and cannot be null");
             }
             else
             {
@@ -55,7 +56,7 @@ namespace IO.Swagger.Model
             // to ensure "version" is required (not null)
             if (version == null)
             {
-                throw new InvalidDataException("version is a required property for DomainContractV2 and cannot be null");
+                throw new InvalidDataException("version is a required property for DomainWithClassificationsContractV2 and cannot be null");
             }
             else
             {
@@ -64,7 +65,7 @@ namespace IO.Swagger.Model
             // to ensure "organizationNameOwner" is required (not null)
             if (organizationNameOwner == null)
             {
-                throw new InvalidDataException("organizationNameOwner is a required property for DomainContractV2 and cannot be null");
+                throw new InvalidDataException("organizationNameOwner is a required property for DomainWithClassificationsContractV2 and cannot be null");
             }
             else
             {
@@ -73,12 +74,13 @@ namespace IO.Swagger.Model
             // to ensure "defaultLanguageCode" is required (not null)
             if (defaultLanguageCode == null)
             {
-                throw new InvalidDataException("defaultLanguageCode is a required property for DomainContractV2 and cannot be null");
+                throw new InvalidDataException("defaultLanguageCode is a required property for DomainWithClassificationsContractV2 and cannot be null");
             }
             else
             {
                 this.DefaultLanguageCode = defaultLanguageCode;
             }
+            this.Classifications = classifications;
             this.NamespaceUri = namespaceUri;
             this.License = license;
             this.LicenseUrl = licenseUrl;
@@ -86,6 +88,12 @@ namespace IO.Swagger.Model
             this.QualityAssuranceProcedureUrl = qualityAssuranceProcedureUrl;
         }
         
+        /// <summary>
+        /// Gets or Sets Classifications
+        /// </summary>
+        [DataMember(Name="classifications", EmitDefaultValue=false)]
+        public List<ClassificationListItemContractV2> Classifications { get; set; }
+
         /// <summary>
         /// Gets or Sets NamespaceUri
         /// </summary>
@@ -147,7 +155,8 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class DomainContractV2 {\n");
+            sb.Append("class DomainWithClassificationsContractV2 {\n");
+            sb.Append("  Classifications: ").Append(Classifications).Append("\n");
             sb.Append("  NamespaceUri: ").Append(NamespaceUri).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Version: ").Append(Version).Append("\n");
@@ -177,20 +186,26 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as DomainContractV2);
+            return this.Equals(input as DomainWithClassificationsContractV2);
         }
 
         /// <summary>
-        /// Returns true if DomainContractV2 instances are equal
+        /// Returns true if DomainWithClassificationsContractV2 instances are equal
         /// </summary>
-        /// <param name="input">Instance of DomainContractV2 to be compared</param>
+        /// <param name="input">Instance of DomainWithClassificationsContractV2 to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(DomainContractV2 input)
+        public bool Equals(DomainWithClassificationsContractV2 input)
         {
             if (input == null)
                 return false;
 
             return 
+                (
+                    this.Classifications == input.Classifications ||
+                    this.Classifications != null &&
+                    input.Classifications != null &&
+                    this.Classifications.SequenceEqual(input.Classifications)
+                ) && 
                 (
                     this.NamespaceUri == input.NamespaceUri ||
                     (this.NamespaceUri != null &&
@@ -247,6 +262,8 @@ namespace IO.Swagger.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
+                if (this.Classifications != null)
+                    hashCode = hashCode * 59 + this.Classifications.GetHashCode();
                 if (this.NamespaceUri != null)
                     hashCode = hashCode * 59 + this.NamespaceUri.GetHashCode();
                 if (this.Name != null)
