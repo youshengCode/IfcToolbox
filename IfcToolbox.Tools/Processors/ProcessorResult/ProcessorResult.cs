@@ -7,8 +7,9 @@ namespace IfcToolbox.Tools.Processors
     {
         public bool Success { get; set; } = false;
         public IList<string> FilePaths { get; set; }
+        public object Value { get; set; }
 
-        public string FirstSuccessed()
+        public string GetFirstFilePath()
         {
             if (Success)
                 if (FilePaths.Any())

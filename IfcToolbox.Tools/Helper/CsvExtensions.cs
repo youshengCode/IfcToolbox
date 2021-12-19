@@ -40,13 +40,11 @@ namespace IfcToolbox.Tools.Helper
             {
                 foreach (DataColumn column in table.Columns)
                     csv.WriteField(column.ColumnName);
-
                 csv.NextRecord();
                 foreach (DataRow row in table.Rows)
                 {
                     for (var i = 0; i < table.Columns.Count; i++)
                         csv.WriteField(row[i]);
-
                     csv.NextRecord();
                 }
             }

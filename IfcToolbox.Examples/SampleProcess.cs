@@ -26,8 +26,10 @@ namespace IfcToolbox.Examples
             //IfcConverterSample.ConvertToSvg(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
             //IfcConverterSample.ConvertToObj(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
 
-            IfcAnonymizerSample.AnonymizeUserInfo(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
+            //IfcAnonymizerSample.AnonymizeUserInfo(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
             //IfcAnonymizerSample.AnonymizeProductInfoWithRules(LocalFiles.Ifc4_SampleHouse.CopyToOutputFolder());
+
+            IfcValidatorSample.ValidatePropertyExistence(LocalFiles.Ifc4_Revit_ARC_FireRatingAdded.CopyToOutputFolder());
 
             //SimulationProcessingTime();
         }

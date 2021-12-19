@@ -14,6 +14,7 @@
         public const string Ifc4_BasinFacetedBrep = "TestFiles\\Ifc4_BasinFacetedBrep.ifc";
         public const string Ifc4_CubeAdvancedBrep = "TestFiles\\Ifc4_CubeAdvancedBrep.ifc";
         public const string Ifc4_Revit_ARC = "TestFiles\\Ifc4_Revit_ARC.ifc";
+        public const string Ifc4_Revit_ARC_FireRatingAdded = "TestFiles\\Ifc4_Revit_ARC_FireRatingAdded.ifc";
         public const string Ifc4_Revit_MEP = "TestFiles\\Ifc4_Revit_MEP.ifc";
         public const string Ifc4_Revit_STR = "TestFiles\\Ifc4_Revit_STR.ifc";
         public const string Ifc4_SampleHouse = "TestFiles\\Ifc4_SampleHouse.ifc";

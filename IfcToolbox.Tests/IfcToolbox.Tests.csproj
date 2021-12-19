@@ -57,6 +57,9 @@
     <None Update="TestFiles\Ifc4_Revit_ARC.ifc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="TestFiles\Ifc4_Revit_ARC_FireRatingAdded.ifc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="TestFiles\Ifc4_Revit_MEP.ifc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

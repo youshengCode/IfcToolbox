@@ -15,13 +15,20 @@ namespace IfcToolbox.Core.Hierarchy
             IsTypeGroup = isTypeGroup;
         }
 
+        public HierarchyNode(string name, bool isComposition = false)
+        {
+            Name = name;
+            IsComposition = isComposition;
+        }
+
         public string Name { get; set; }
         public string Id { get; set; }
-        public string Description { get; set; }
+        public string Description { get; set; } = null;
         public bool IsComposition { get; set; }
-        public bool IsTypeGroup { get; set; }
+        public bool IsTypeGroup { get; set; } = false;
+        public object Value { get; set; }
         public ObservableCollection<HierarchyNode> Children { get; set; } = new ObservableCollection<HierarchyNode>();
-        
+
         public string ParentId { get; set; } // For the root node, the parentId is null.
         public void AddParentId(string parentId)
         {
@@ -36,7 +43,7 @@ namespace IfcToolbox.Core.Hierarchy
             string compositionText = null;
             if (IsComposition)
                 compositionText += "<< Compo";
-            if(showParentId)
+            if (showParentId)
                 compositionText += " _↑ " + ParentId;
 
             if (Description != null)

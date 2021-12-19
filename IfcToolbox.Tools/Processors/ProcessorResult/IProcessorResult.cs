@@ -6,7 +6,7 @@ namespace IfcToolbox.Tools.Processors
     {
         bool Success { get; set; }
         IList<string> FilePaths { get; set; }
-
-        string FirstSuccessed();
+        object Value { get; set; }
+        string GetFirstFilePath();
     }
 }
