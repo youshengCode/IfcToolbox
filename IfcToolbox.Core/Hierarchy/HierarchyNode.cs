@@ -6,6 +6,8 @@ namespace IfcToolbox.Core.Hierarchy
 {
     public class HierarchyNode
     {
+        public HierarchyNode() { }
+
         public HierarchyNode(string name, string id, string description = null, bool isComposition = false, bool isTypeGroup = false)
         {
             Name = name;

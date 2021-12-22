@@ -5,6 +5,8 @@ using Serilog;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using IfcToolbox.Core.Validate;
+using IfcToolbox.Core.Utilities;
 
 namespace IfcToolbox.Examples.Samples
 {
@@ -20,6 +22,10 @@ namespace IfcToolbox.Examples.Samples
             {
                 string tableCsvPath = Path.Combine(Path.GetDirectoryName(filePath), Path.GetFileNameWithoutExtension(filePath) + "_" + table.TableName) + ".csv";
                 table.SaveAsCsv(tableCsvPath);
+
+                Marslogger.Mark($"Total entity found : {PropertyExistenceCount.GetEntitiesCount(table)}");
+                Marslogger.Mark($"Property existence checked : {PropertyExistenceCount.GetPropertiesCount(table)}");
+                Marslogger.Mark($"Existence percentage : {PropertyExistenceCount.GetExistencePercentage(table)}%");
             }
         }
 
