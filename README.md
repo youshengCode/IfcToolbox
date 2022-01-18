@@ -11,7 +11,7 @@
   <a style="text-decoration:none" href="https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab">
     <img src="https://img.shields.io/badge/Microsoft%20Store-Download-blue" alt="Store link" />
   </a>
-  <a style="text-decoration:none">
+  <a style="text-decoration:none" href="https://github.com/youshengCode/IfcToolbox/releases">
     <img src="https://img.shields.io/badge/Latest%20Version-1.2.1.0-brightgreen" alt="Version" />
   </a>
   <a style="text-decoration:none" href="https://bimmars.com">
@@ -45,7 +45,7 @@ There is also a GUI version desktop app, which contains all the implementations 
 
 **[Download IFC Toolbox from Microsoft Store](https://www.microsoft.com/en-us/p/ifc-toolbox/9n77phd2h471#activetab=pivot:overviewtab)**
 
-*If you cannot install directly from Microsoft Store, you can use the [released sideload package](https://github.com/youshengCode/IfcToolbox/releases/tag/sideload) to install IFC Toolbox in your PC. [The detailed process can be found here](Main/Download.md).
+*If you cannot install directly from Microsoft Store, you can use the [released sideload package](https://github.com/youshengCode/IfcToolbox/releases) to install IFC Toolbox in your PC. [The detailed process can be found here](https://youshengcode.github.io/IfcToolbox.Doc/#/Main/Download).
 
 ### Videos
 
