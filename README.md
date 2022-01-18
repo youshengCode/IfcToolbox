@@ -24,7 +24,7 @@
 
 
 
-IfcToolbox is a .Net kit of simple tools for processing IFC files. It provides tools to optimize, convert, split, relocate and anonymize IFC files easily. Based on open-source libraries like [Xbim](https://docs.xbim.net/) and [IfcOpenShell](http://ifcopenshell.org/). 
+IfcToolbox is a .Net kit of simple tools for processing IFC files. It provides tools to optimize, convert, split, relocate, anonymize and validate IFC files easily. Based on open-source libraries like [Xbim](https://docs.xbim.net/) and [IfcOpenShell](http://ifcopenshell.org/). 
 
 IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Technical](https://technical.buildingsmart.org/misc/openbim-marketplace/). Thank you all for ❤️ IFC Toolbox and bring IFC Toolbox to buildingSMART International Summit 2021.
 
@@ -37,6 +37,7 @@ IfcToolbox is one of the proposals in [openBIM Marketplace - buildingSMART Techn
 - IFC Splitter – Split IFC files by type/container (site, building, level) or simply split selected objects in the hierarchy.
 - IFC Relocator – Relocate the IFC world coordinate system and the project coordinate system. Align the origin of the two models.
 - IFC Anonymizer – Anonymous user-related information and specific product-related information. Simplify model submission in bidding activities or design competitions.
+- IFC Validator – Validate the existence of the properties of classifications in the IFC file. Powered by buildingSMART Data Dictionary - bSDD OpenAPI.
 
 ## GUI App in Microsoft Store 
 
@@ -47,6 +48,10 @@ There is also a GUI version desktop app, which contains all the implementations 
 *If you cannot install directly from Microsoft Store, you can use the [released sideload package](https://github.com/youshengCode/IfcToolbox/releases/tag/sideload) to install IFC Toolbox in your PC. [The detailed process can be found here](Main/Download.md).
 
 ### Videos
+
+IFC Toolbox in [buildingSMART International](https://www.buildingsmart.org/) Summit 2021, OpenBIM Marketplace.
+
+- [IfcToolbox: Simple tools for processing IFC files - Yousheng Wang](https://vimeo.com/642715854?embedded=true&source=video_title&owner=94789481)
 
 IFC Toolbox is part of [OSArch](https://osarch.org/) Community, you can find more technical details in our monthly meetup recording here
 
@@ -100,6 +105,7 @@ IFC Toolbox GUI App is a free software, if you like it, please consider:
 
 ## Third Party Licences
 
+- bSDD OpenAPI https://github.com/buildingSMART/bSDD - [buildingSMART International](https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/)
 - Xbim.Essentials https://docs.xbim.net/ - [CDDL License](https://docs.xbim.net/license/license.html)
 - IfcOpenShell http://ifcopenshell.org/ - [LGPL-3.0 License](https://github.com/IfcOpenShell/IfcOpenShell/blob/v0.6.0/COPYING)
 - MoreLINQ https://morelinq.github.io/ - [Apache-2.0 License](https://licenses.nuget.org/Apache-2.0)
