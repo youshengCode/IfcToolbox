@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Microsoft%20Store-Download-blue" alt="Store link" />
   </a>
   <a style="text-decoration:none">
-    <img src="https://img.shields.io/badge/Latest%20Version-1.2.0.0-brightgreen" alt="Version" />
+    <img src="https://img.shields.io/badge/Latest%20Version-1.2.1.0-brightgreen" alt="Version" />
   </a>
   <a style="text-decoration:none" href="https://bimmars.com">
     <img src="https://img.shields.io/badge/More%20Info-BIM Mars-red" alt="More" />
