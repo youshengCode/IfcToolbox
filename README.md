@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" align="center" src="https://bimmars.com/wp-content/uploads/2021/09/IfcToolbox_Applogo.png">
+  <img width="128" align="center" src="./Assets/IfcToolbox_Applogo.png">
 </p>
 <h1 align="center">
   IFC Toolbox
@@ -68,16 +68,22 @@ And [Javad Hamidi](https://www.linkedin.com/in/javad-hamidi-8086a7150/) from our
 ### Screenshots
 
 <p align="center">
-  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/StoreHeroImage2k.png">
+  <img align="center" src="./Assets/StoreHeroImage2k.png">
 </p>
 <p align="center">
-  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostOptimizer_2k.png">
+  <img align="center" src="./Assets/PostOptimizer.png">
 </p>
 <p align="center">
-  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostSplitter_2k.png">
+  <img align="center" src="./Assets/PostRelocator.png">
 </p>
 <p align="center">
-  <img align="center" src="https://bimmars.com/wp-content/uploads/2021/09/PostConverter_2k.png">
+  <img align="center" src="./Assets/PostSplitter.png">
+</p>
+<p align="center">
+  <img align="center" src="./Assets/PostConverter.png">
+</p>
+<p align="center">
+  <img align="center" src="./Assets/PostAnonymizer.png">
 </p>
 
 ## Co-Translation
