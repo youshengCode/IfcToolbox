@@ -4,7 +4,7 @@ using Serilog;
 
 namespace IfcToolbox.Examples.Samples
 {
-    class IfcOptimizerSample
+   public class IfcOptimizerSample
     {
         public static void Optimize(string filePath)
         {
